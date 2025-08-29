@@ -1,15 +1,15 @@
 <script setup>
 const users = [
-  { id: 1, name: "Ana", lastName: "Pérez", age: 25 },
-  { id: 2, name: "Luis", lastName: "García", age: 32 },
-  { id: 3, name: "María", lastName: "Rodríguez", age: 28 },
-  { id: 4, name: "Carlos", lastName: "Fernández", age: 41 },
-  { id: 5, name: "Valentina", lastName: "Morales", age: 22 },
-  { id: 6, name: "Diego", lastName: "López", age: 36 },
-  { id: 7, name: "Sofía", lastName: "Castro", age: 29 },
-  { id: 8, name: "Javier", lastName: "Torres", age: 33 },
-  { id: 9, name: "Camila", lastName: "Vargas", age: 27 },
-  { id: 10, name: "Felipe", lastName: "Navarro", age: 38 },
+  { name: "Ana", lastName: "Pérez", birthDate: "1999-03-15", age: 25 },
+  { name: "Luis", lastName: "García", birthDate: "1992-07-22", age: 32 },
+  { name: "María", lastName: "Rodríguez", birthDate: "1996-11-08", age: 28 },
+  { name: "Carlos", lastName: "Fernández", birthDate: "1983-05-12", age: 41 },
+  { name: "Valentina", lastName: "Morales", birthDate: "2002-01-27", age: 22 },
+  { name: "Diego", lastName: "López", birthDate: "1988-09-03", age: 36 },
+  { name: "Sofía", lastName: "Castro", birthDate: "1995-06-19", age: 29 },
+  { name: "Javier", lastName: "Torres", birthDate: "1991-04-25", age: 33 },
+  { name: "Camila", lastName: "Vargas", birthDate: "1997-12-30", age: 27 },
+  { name: "Felipe", lastName: "Navarro", birthDate: "1986-10-10", age: 38 },
 ];
 </script>
 
@@ -20,6 +20,7 @@ const users = [
         <th>#</th>
         <th>Nombre</th>
         <th>Apellido</th>
+        <th>Cumpleaños</th>
         <th>Edad</th>
       </tr>
     </thead>
@@ -28,6 +29,7 @@ const users = [
         <th scope="row">{{ user.id }}</th>
         <td>{{ user.name }}</td>
         <td>{{ user.lastName }}</td>
+        <td>{{ user.birthDate }}</td>
         <td>{{ user.age }}</td>
       </tr>
     </tbody>
