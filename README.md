@@ -1,1 +1,12 @@
 # Vue-tareas
+
+Este repositorio contiene una colección de mini-proyectos de Vue. Cada sub-carpeta en este repositorio es un proyecto independiente y contiene su propio `README.md` con instrucciones específicas y detalles sobre el proyecto.
+
+## Proyectos
+
+A continuación se muestra una lista de los proyectos incluidos:
+
+-   **[registerForm](./registerForm/my-vue-app/README.md)**: Un formulario de registro de usuarios.
+-   **[vue-project](./vue-project/README.md)**: Una tabla de registros.
+
+Para explorar un proyecto, navegue a su respectiva carpeta y siga las instrucciones en su `README.md`.
