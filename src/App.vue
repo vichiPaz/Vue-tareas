@@ -34,10 +34,6 @@ function onCleared() {
 </template>
 
 <style scoped>
-* {
-  width: 100%;
-}
-
 nav {
   color: white;
   background-color: black;
