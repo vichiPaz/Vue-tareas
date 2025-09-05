@@ -8,5 +8,6 @@ A continuación se muestra una lista de los proyectos incluidos:
 
 - **[registerForm](./registerForm/my-vue-app/README.md)**: Un formulario de registro de usuarios.
 - **[vue-project](./vue-project/README.md)**: Una lista de usuarios.
+- **[studentForm](./studentForm/README.md)**: Un formulario dinámico con select y radio buttons.
 
 Para explorar un proyecto, navegue a su respectiva carpeta y siga las instrucciones en su `README.md`.
