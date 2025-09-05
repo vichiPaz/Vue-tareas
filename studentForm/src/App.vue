@@ -62,7 +62,7 @@ body {
 }
 
 .custom-btn-group {
-  padding: 3rem 35% 0 35%;
+  padding: 0 35% 0 35%;
 }
 
 .custom-section__header {
@@ -72,7 +72,7 @@ body {
 }
 
 .custom-section {
-  padding: 4rem;
+  padding: 2rem 4rem;
   width: 55%;
   align-items: center;
 }
