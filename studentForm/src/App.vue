@@ -5,11 +5,21 @@ import SelectForm from "./components/Select.vue";
 
 const nivel = ref("");
 const dia = ref("");
-const isReady = ref("");
+const isReady = ref(false);
+const errorMsg = ref("");
 const resetForm = () => {
   nivel.value = "";
   dia.value = "";
   isReady.value = false;
+};
+
+const handleSubmit = () => {
+  if (!nivel.value || !dia.value) {
+    errorMsg.value = "🚨 Debes completar todos los campos!";
+    return;
+  }
+  errorMsg.value = "";
+  isReady.value = true;
 };
 </script>
 
@@ -17,6 +27,11 @@ const resetForm = () => {
   <header class="text-center custom-section__header">
     <h1>🐮 Formulario muy importante 🐸</h1>
   </header>
+
+  <div v-if="errorMsg" class="alert alert-danger mx-auto mt-2">
+    {{ errorMsg }}
+  </div>
+
   <section class="text-center">
     <div v-show="!isReady">
       <RadioForm v-model:nivel="nivel" />
@@ -32,14 +47,16 @@ const resetForm = () => {
           Vas a estudiar <strong> {{ nivel }}</strong>
         </p>
         <p>
-          Tu día favorito es el <strong>{{ dia || " " }}</strong>
+          Tu día favorito es el <strong>{{ dia }}</strong>
         </p>
       </div>
     </section>
-    <div class="custom-btn-group pb-5">
+
+    <section class="custom-btn-group pb-5">
       <button
         class="btn btn-light m-2 w-50"
-        @click="isReady = !isReady"
+        @click="handleSubmit"
+        :disabled="!nivel && !dia"
         v-show="!isReady"
       >
         Enviar
@@ -51,7 +68,7 @@ const resetForm = () => {
       >
         Reiniciar
       </button>
-    </div>
+    </section>
   </section>
 </template>
 
