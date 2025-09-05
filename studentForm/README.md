@@ -15,18 +15,24 @@ Para lograr esto, se utiliza una única propiedad en el modelo de datos de Vue p
 **Ejemplo del modelo:**
 
 ```javascript
-const nivel = ref("Universitario"); // Opción inicial
+const nivel = ref('Universitario'); // Opción inicial
 ```
 
 ### 2. Control Select
 
-Se incluye un control `select` para la selección de un día de la semana. La primera opción del `select` está deshabilitada por defecto para guiar al usuario a realizar una selección activa.
+Se incluye un control `select` que muestra los días de la semana. La primera opción del `select` está deshabilitada por defecto para guiar al usuario a realizar una selección activa. Cuando el operador selecciona un día, la aplicación muestra cuál ha sido seleccionado.
+
+### 3. Validación de Formulario
+
+El formulario incluye una lógica de validación que no permite el envío de datos hasta que el usuario haya seleccionado una opción en cada uno de los campos (nivel de estudios y día de la semana). Si se intenta enviar el formulario sin completar, se muestra un mensaje de error.
 
 ## Requerimientos Cumplidos
 
 - **Controles Radio:** Se han creado cuatro controles de tipo `radio` para seleccionar el tipo de estudios.
-- **Visualización de Selección:** Se muestra en la parte inferior del componente la opción actualmente seleccionada, reflejando el estado del modelo de datos.
-- **Control Select:** Se ha implementado un `select` para elegir una opción de una lista, con la primera opción deshabilitada como guía.
+- **Visualización de Selección (Radio):** Se muestra en la parte inferior del componente la opción actualmente seleccionada, reflejando el estado del modelo de datos.
+- **Control Select:** Se ha implementado un `select` para elegir un día de la semana de una lista, con la primera opción deshabilitada como guía.
+- **Visualización de Selección (Select):** Al seleccionar un día, se muestra el valor elegido por el usuario.
+- **Validación de Formulario:** El botón de "Enviar" permanece deshabilitado hasta que se seleccione una opción para cada campo. Si se intenta enviar el formulario vacío, se muestra un mensaje de error.
 
 ## Cómo Ejecutar el Proyecto
 
