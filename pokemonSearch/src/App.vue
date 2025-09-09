@@ -9,7 +9,7 @@ const errorMsg = ref("");
 
 <template>
   <header class="text-center custom-section__header">
-    <h1>PokéDex 📒</h1>
+    <h1>Pokédex 📒</h1>
   </header>
   <section class="container custom-searchBarWrapper">
     <SearchBar v-model="searchQuery" @update:modelValue="errorMsg = ''" />
