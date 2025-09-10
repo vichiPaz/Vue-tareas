@@ -23,6 +23,7 @@ export function usePokedex() {
           id,
           name: it.name,
           imageUrl: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${id}.png`,
+          description: it.description,
         };
       });
     } catch (e) {

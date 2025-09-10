@@ -12,7 +12,14 @@ const errorMsg = ref("");
     <h1>Pokédex 📒</h1>
   </header>
   <section class="container custom-searchBarWrapper">
-    <SearchBar v-model="searchQuery" @update:modelValue="errorMsg = ''" />
+    <SearchBar
+      v-model="searchQuery"
+      @search="
+        (q) => {
+          searchQuery = q;
+        }
+      "
+    />
   </section>
   <section class="container custom-main">
     <div v-show="errorMsg" class="alert alert-success mx-auto mt-2">
@@ -22,6 +29,7 @@ const errorMsg = ref("");
       <Card
         :search="searchQuery"
         @no-results="errorMsg = 'No se encontraron resultados 😢'"
+        @has-results="errorMsg = ''"
       />
     </section>
   </section>
