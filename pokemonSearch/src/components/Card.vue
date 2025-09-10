@@ -154,7 +154,7 @@ const typeColors = {
                 </div>
 
                 <h5 class="text-center mt-3">Habilidades:</h5>
-                <div class="d-flex flex-wrap gap-2 justify-content-center mb-2">
+                <div class="d-flex flex-wrap gap-2 justify-content-center mb-1">
                   <span
                     class="ability text-capitalize"
                     v-for="ab in details.get(p.id).abilities"
@@ -227,9 +227,9 @@ const typeColors = {
 }
 
 .ability {
-  background: #131774;
-  color: #fff;
-  padding: 6px 10px;
+  background: #a6e82c;
+  color: #032f0f;
+  padding: 2px 6px;
   border-radius: 8px;
   font-weight: 600;
   font-size: small;
@@ -259,14 +259,15 @@ const typeColors = {
 .stat .fill {
   display: block;
   height: 100%;
-  background: rgb(6, 179, 32);
+  background: #a6e82c;
 }
 
 .flip-card {
   height: 100%;
 }
 .flip-card-inner {
-  min-height: 440px;
+  min-height: 480px;
+  max-height: 480px;
   padding: 8px;
   display: flex;
   flex-direction: column;
@@ -279,5 +280,10 @@ const typeColors = {
   border: 1px solid #e6e6e6;
   border-radius: 16px;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 </style>
