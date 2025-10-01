@@ -11,5 +11,6 @@ A continuación se muestra una lista de los proyectos incluidos:
 - **[list-project](./list-project/README.md)**: Una lista de personajes.
 - **[studentForm](./studentForm/README.md)**: Un formulario dinámico con select y radio buttons.
 - **[pokemonSearch](./pokemonSearch/README.md)**: Un buscador de pokemones.
+- **[propsComponent](./propsComponent/README.md)**: Una galería de personajes de Game of Thrones.
 
 Para explorar un proyecto, navegue a su respectiva carpeta y siga las instrucciones en su `README.md`.
